@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "target": "ES5", //tried ES6 as well
+    "module": "commonjs"
+  }
+}

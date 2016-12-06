@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="/stylesheets/style.css?v=2" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body id="blog-list">
+  <div class="top">
+    <span>xxx的网络日志</span>
+    <a href="http://web.blog.com/blogs/new" class="right font-12">新建博客</a>
+  </div>
+  <div>
+    <div class="right">
+      <div class="item article-list-menu">
+        <div class="info">
+          <header>文章类别</header>
+          <div class="detail">
+            <ul>
+              <li><a href="javascript:void(0);">童言无忌(10)</a></li>
+              <li><a href="javascript:void(0)">杂文(21)</a></li>
+              <li><a href="javascript:void(0)">计算机(3)</a></li>
+              <li><a href="javascript:void(0)">javascript(123)</a></li>
+              <li><a href="javascript:void(0)">自动化(44)</a></li>
+              <li><a href="javascript:void(0)">计算机(3)</a></li>
+              <li><a href="javascript:void(0)">javascript(123)</a></li>
+              <li><a href="javascript:void(0)">自动化(44)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item introduct-box">
+        <div class="info">
+          <header>关于</header>
+          <div class="detail">
+            <img src="http://images.china.cn/attachement/jpg/site1000/20140903/c03fd54abb761570fec535.jpg" alt="">
+            <ul>
+              <li>个人简介</li>
+              <li>文章（456）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="article">
+
+      </div>
+      <div class="article-list">
+        <header>最新文章</header>
+        <ul class="latest-box">
+          {{#each blogs}}
+          <li>
+            <span>{{this.date}}</span>
+            <em> » </em>
+            <a href="http://web.blog.com/blogs/{{this.id}}">{{this.title}}</a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

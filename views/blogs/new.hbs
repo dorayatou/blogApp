@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="/stylesheets/style.css?v=2" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <style>
+    input[type='text'] {
+      width: 550px;
+      height: 25px;
+    }
+    
+    textarea {
+      width: 535px;
+    }
+    
+    .submit {
+      text-align: center;
+    }
+    
+    input[type='submit'] {}
+  </style>
+</head>
+<div class="top">
+  <span>xxx的网络日志</span>
+  <em> » </em>
+  <span>
+    <a href="http://web.blog.com/blogs/" class="blue">返回</a>
+  </span>
+</div>
+
+<body id="blog-list">
+
+  <h2>新建博客</h2>
+  <form action="http://web.blog.com/blogs/create" method="post">
+    <div class="new-item">
+      <label for="name">标题：</label>
+      <input type="text" name="title" value="" />
+    </div>
+    <div class="new-item">
+      <label for="content">内容：</label>
+      <textarea name="content" id="" cols="80" rows="10"></textarea>
+    </div>
+    <div class="new-item">
+      <label for="img_url">图片地址：</label>
+      <input type="text" name="img_url" value="" />
+    </div>
+    <div class="new-item submit">
+      <input type="submit" value="提交">
+    </div>
+  </form>
+
+</body>
+
+</html>
