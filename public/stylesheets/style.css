@@ -720,6 +720,7 @@ button.button {
   display: inline-block;
   text-align: right;
   width: 65px;
+  vertical-align: top;
 }
 
 #blog-list .new-item {

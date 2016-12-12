@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 //static resources
-app.use(express.static('bower_components'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // app.engine('html', require('hbs').__express);
 
@@ -28,7 +28,6 @@ app.use(bodyParser.urlencoded({
 	extended: false
 }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);

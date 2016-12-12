@@ -1,0 +1,21 @@
+{
+  "name": "blogapp",
+  "description": "blog",
+  "main": "app.js",
+  "authors": [
+    "yuwenjuan <yuwenjuan@rd.tuan800.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dorayatou/blogApp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

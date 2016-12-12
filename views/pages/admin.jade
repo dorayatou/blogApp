@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+  .container
+    .row
+     form.form-horizontal(method="post", action="/admin/movie/new")
+      .form-group
+        label.col-sm-2.control-label(for="inputTitle") 电影名字
+        .col-sm-10
+          input#inputTitle.form-controll(type="text" name="movie[title]")
+
+        label.col-sm-2.control-label(for="inputDoctor") 年份
+        .col-sm-10
+          input#inputDoctor.form-controll(type="text" name="movie[doctor]")
+
+        label.col-sm-2.control-label(for="inputCountry") 国家
+        .col-sm-10
+          input#inputCountry.form-controll(type="text" name="movie[country]")
+
+        label.col-sm-2.control-label(for="inputYear") 年份
+        .col-sm-10
+          input#inputYear.form-controll(type="text" name="movie[year]")
+
+        label.col-sm-2.control-label(for="inputPoster") 海报
+        .col-sm-10
+          input#inputPoster.form-controll(type="text" name="movie[poster]")
+
+        label.col-sm-2.control-label(for="inputSummary") 简介
+        .col-sm-10
+          input#inputSummary.form-controll(type="text" name="movie[summary]")
+        
+        label.col-sm-2.control-label(for="")
+        .col-sm-10
+          input(type="submit")
+

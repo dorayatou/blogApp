@@ -82,3 +82,9 @@ title: 测试网站创建博客是否正常
 img_url: http://images.china.cn/attachement/jpg/site1000/20140903/c03fd54abb761570fec535.jpg
 content: 测试网站创建博客是否正常测试网站创建博客是否正常测试网站创建博客是否正常测试网站创建博客是否正常
 ---
+id: 6
+date: 12/09/2016
+title: dd
+img_url: dd
+content: dd
+---

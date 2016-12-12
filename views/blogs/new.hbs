@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link href="/stylesheets/style.css?v=2" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/libs/jquery/dist/jquery.min.js"></script>
   <style>
     input[type='text'] {
-      width: 550px;
+      width: 800px;
       height: 25px;
     }
     
     textarea {
-      width: 535px;
+      width: 784px;
     }
     
     .submit {
@@ -21,36 +21,73 @@
     }
     
     input[type='submit'] {}
+    
+    .default_link {
+      color: #09c;
+      text-decoration: underline;
+    }
   </style>
 </head>
-<div class="top">
-  <span>xxx的网络日志</span>
-  <em> » </em>
-  <span>
-    <a href="http://web.blog.com/blogs/" class="blue">返回</a>
-  </span>
-</div>
 
 <body id="blog-list">
+  <div class="top">
+    <span>xxx的网络日志</span>
+    <em> » </em>
+    <span>
+    <a href="http://web.blog.com/blogs/" class="blue">返回</a>
+  </span>
+  </div>
 
-  <h2>新建博客</h2>
-  <form action="http://web.blog.com/blogs/create" method="post">
-    <div class="new-item">
-      <label for="name">标题：</label>
-      <input type="text" name="title" value="" />
-    </div>
-    <div class="new-item">
-      <label for="content">内容：</label>
-      <textarea name="content" id="" cols="80" rows="10"></textarea>
-    </div>
-    <div class="new-item">
-      <label for="img_url">图片地址：</label>
-      <input type="text" name="img_url" value="" />
-    </div>
-    <div class="new-item submit">
-      <input type="submit" value="提交">
-    </div>
-  </form>
+  <div class="content">
+    <h2>新建博客</h2>
+    <form action="http://web.blog.com/blogs/create" method="post">
+      <div class="new-item">
+        <label for="name">标题：</label>
+        <input type="text" name="title" value="" />
+      </div>
+      <div class="new-item">
+        <label for="content">内容：</label>
+        <textarea name="content" id="" cols="80" rows="10"></textarea>
+      </div>
+      <div class="new-item">
+        <label for="img_url">图片地址：</label>
+        <input type="text" name="img_url" value="" />
+      </div>
+      <div class="new-item">
+        <label for="keywords">关键词：</label>
+        <input type="text" name="keywords" values="" />
+      </div>
+      <div class="new-item" style="display:inline-block;">
+        <label for="catetory">分类：</label>
+        <select name="catetory">
+        <option value="1">童言无忌</option>
+        <option value="2">杂文</option>
+        <option value="3">计算机</option>
+        <option value="4">自动化</option>
+        <option value="5">javascript</option>
+      </select>
+        <a href="javascript:void(0)" style="color:#09c;margin-left:10px;">添加新分类</a>
+      </div>
+      <div class="new-item" style="display:inline-block;margin-left:30px;">
+        <label for="publish_flag">权限设置：</label>
+        <select name="publish_flag">
+        <option value="0">公开</option>
+        <option value="1">仅自己可看</option>
+        <option value="2">好友可看</option>
+      </select>
+      </div>
+      <div class="new-item submit">
+        <input type="submit" value="发表" style="background:#09c;padding:2px 20px;color:#fff;border:1px solid #09c;border-radius:3px;">
+        <a href="http://web.blog.com/blogs" style="color:#09c;margin-left:10px;">取消</a>
+      </div>
+    </form>
+  </div>
+
+  <div id="footer" style="border-top:1px solid #ccc;text-align:center;margin-top:30px;color:#666;">
+    <p>技术文档 |功能介绍 |使用说明</p>
+    <p><a href="javascript" style="color:#09c;">联系方式</a> | <a href="javascript:void(0)" style="color:#09c;">张玲(334080707@qq.com)</a></p>
+    <p>特别强调，此网站中涉及到的图片均来自互联网，与作者本人无关，特此鸣谢</p>
+  </div>
 
 </body>
 
