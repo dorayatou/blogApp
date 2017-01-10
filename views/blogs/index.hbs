@@ -6,15 +6,44 @@
   <title>Document</title>
   <link href="/stylesheets/style.css?v=2" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="/libs/jquery/dist/jquery.min.js"></script>
+  <style>
+    #header{
+      height: 100px;
+      line-height: 100px;
+      background: orange;
+      width: 80%;
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      text-align: center;
+    }
+    #content{
+      top: 100px;
+      overflow: auto;
+      position: absolute;
+      z-index: 10;
+      bottom: 100px;
+      width: 80%;
+    }
+    #footer{
+      position: absolute;
+      z-index: 200;
+      bottom: 0;
+      text-align: center;
+      background: lightgreen;
+      width: 80%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  </style>
 </head>
 
 <body id="blog-list">
-  <div class="top">
-    <span>xxx的网络日志</span>
-    <a href="http://web.blog.com/blogs/new" class="right font-12">新建博客</a>
-  </div>
+  <header id="header">
+    <span>月岛雯的魔法小屋</span>
+  </header>
 
-  <div style="overflow:hidden;">
+  <section id="content">
     <div class="right">
       <div class="item article-list-menu">
         <div class="info">
@@ -64,14 +93,16 @@
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="footer" style="border-top:1px solid #ccc;text-align:center;margin-top:30px;color:#666;clear:both;">
+  <footer id="footer">
     <p>技术文档 |功能介绍 |使用说明</p>
-    <p><a href="javascript" style="color:#09c;">联系方式</a> | <a href="javascript:void(0)" style="color:#09c;">张玲(334080707@qq.com)</a></p>
+    <p>
+      <a href="javascript:void(0)">联系方式</a> |
+      <a href="javascript:void(0)">张玲(334080707@qq.com)</a>
+    </p>
     <p>特别强调，此网站中涉及到的图片均来自互联网，与作者本人无关，特此鸣谢</p>
-  </div>
-
+  </footer>
 </body>
 
 </html>

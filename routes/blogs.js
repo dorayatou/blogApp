@@ -33,4 +33,8 @@ blog_router.get('/:id/delete', function (req, res, next) {
   res.redirect("http://web.blog.com/blogs");
 });
 
+blog_router.get('/test', function (req, res, next) {
+  res.render('blogs/test');
+});
+
 module.exports = blog_router;
